@@ -7,6 +7,10 @@ Learn more about the details in the [technical blog post](https://neo4j.com/deve
 
 Create a `.env` file from the environment template file `env.example`
 
+```shell
+cp env.example .env
+```
+
 Available variables:
 | Variable Name          | Default value                      | Description                                                             |
 |------------------------|------------------------------------|-------------------------------------------------------------------------|
@@ -139,7 +143,7 @@ Endpoints:
   - http://localhost:8504/query-stream?text=hello&rag=false (SSE streaming)
 
 Example cURL command:
-```bash
+```shell
 curl http://localhost:8504/query-stream\?text\=minimal%20hello%20world%20in%20python\&rag\=false
 ```
 
